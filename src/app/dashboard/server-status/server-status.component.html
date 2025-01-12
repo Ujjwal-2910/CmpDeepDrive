@@ -1,9 +1,12 @@
-<article>
-    <header>
-        <img src="list.png" alt="A list of items" />
-        <h2>Support Tickets</h2>
-    </header>
-    <div id="status">
-        <p>Todo...</p>
-    </div>
-</article>
+<div id="status">
+    @if (currentStatus === 'online') {
+        <p>Servers are online</p>
+        <p>All systems are operationals.</p>
+    } @else if (currentStatus === 'offline') {
+        <p>Servers are offline</p>
+        <p>Functionality should be restored soon.</p>
+    } @else {
+        <p>Server status is unknown</p>
+        <p>Fetching server status failed</p>
+    }
+</div>
