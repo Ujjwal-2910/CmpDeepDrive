@@ -29,7 +29,7 @@ p:last-of-type {
 
 @keyframes pulse {
     0% {
-        pacity: 1;
+        opacity: 1;
     }
     50% {
         opacity: 0.5;
